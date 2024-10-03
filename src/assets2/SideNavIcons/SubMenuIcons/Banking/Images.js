@@ -1,0 +1,1 @@
+export { default as BankTransaction } from "./Trans/Images";

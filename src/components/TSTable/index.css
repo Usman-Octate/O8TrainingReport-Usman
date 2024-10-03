@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead th {
+  background: black;
+  color: white;
+}
+
+
+table th {
+  padding: 14px 20px;
+  text-align: center;
+}
+table td {
+  padding: 8px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+table tbody tr {
+  border-bottom: 1px solid #ddd;
+  height: 10px;
+  /* transition: background-color 0.3s ease; */
+}
+
+table tbody tr:hover {
+  background-color: #c7c7c7; /* Very light grey */
+}
+
+th .menu {
+  visibility: hidden;
+}
+
+th:hover .menu {
+  visibility: visible;
+}

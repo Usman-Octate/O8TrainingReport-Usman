@@ -1,0 +1,80 @@
+/* Define custom styles for the last row */
+.ag-theme-alpine .ag-center-cols-container .ag-row.last-row .ag-cell {
+    border: none !important; /* Remove borders for cells in the last row */
+  }
+  
+  .ag-theme-alpine .ag-center-cols-container .ag-row.last-row .ag-cell:first-child {
+    border-top-left-radius: 5px !important; /* Add rounded corners to the first cell in the last row */
+  }
+  
+  .ag-theme-alpine .ag-center-cols-container .ag-row.last-row .ag-cell:last-child {
+    border-top-right-radius: 5px !important; /* Add rounded corners to the last cell in the last row */
+  }
+  
+  /* Adjust padding and alignment for the content in the last row */
+  .ag-theme-alpine .ag-center-cols-container .ag-row.last-row .ag-cell .ag-react-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 10px !important;
+  }
+  .custom-body-cell {
+    padding: 0.625rem 0.625rem;
+    border-top: 0.0625rem solid #dee2e6;
+    font-size: 12px;
+    /* Add other styles as needed */
+  }
+  /* Style for the "+ Add Row" button */
+  .ag-theme-alpine .ag-center-cols-container .ag-row.last-row .ag-cell .ag-react-container {
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+  }
+  
+  .ag-theme-alpine .ag-center-cols-container .ag-row.last-row .ag-cell .ag-react-container:hover {
+    background-color: #0056b3 !important; /* Change background color on hover */
+  }
+  
+  .last-row {
+    background-color: #ffffff !important;
+    /* border: 0 solid transparent !important; Reset border */
+    border-left: 5px solid #e3e3e4 !important;
+    border-right: 5px solid #e3e3e4 !important;
+    border-bottom: 0px solid #ffffff !important;
+    border-top: 0px solid #e3e3e4 !important;
+    /* box-shadow: inset 0 0 0 1px #e3e3e4 !important; Optional: Add inset shadow for better visibility */
+    /* border-color: #e3e3e4 !important; */
+}
+
+/* .last-row:hover {
+    background-color: #e9e9e9 !important;
+} */
+
+  
+  /* styles.css (or your preferred stylesheet) */
+  /* Remove border and outline for cells in the last row */
+.ag-theme-quartz .ag-center-cols-container .ag-row.last-row .ag-cell {
+  outline: none !important; /* Remove outline on focus */
+  border-bottom: 0.1px solid rgb(206, 205, 205) !important; 
+}
+
+/* Prevent background color change on focus for the last row */
+.ag-theme-quartz .ag-center-cols-container .ag-row.last-row .ag-cell:focus {
+  background-color: transparent !important;
+}
+
+/* Prevent hover effect for the last row */
+.ag-theme-quartz .ag-center-cols-container .ag-row.last-row .ag-cell:hover {
+  background-color: transparent !important;
+}
+
+/* Apply styles to the last row cells to ensure they don't change color on selection */
+.ag-theme-quartz .ag-center-cols-container .ag-row.last-row .ag-cell.ag-cell-focus {
+  background-color: transparent !important;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+

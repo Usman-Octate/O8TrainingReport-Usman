@@ -1,0 +1,6 @@
+/* styles.css (or your preferred stylesheet) */
+.ag-theme-alpine .ag-row-last .ag-cell {
+    outline: none !important; /* Remove outline on focus */
+    border: none !important; /* Remove any border */
+  }
+  
