@@ -16,36 +16,36 @@ const Navigator = lazy(() => import("../src/Navigator/Navigator"));
 
 function App() {
   const router = createBrowserRouter([
+    // {
+    //   path: "/",
+    //   element: (
+    //     <Suspense
+    //       fallback={
+    //         <div className="loader-container" style={{ height: "100vh" }}>
+    //           <span className="loader"></span>
+    //         </div>
+    //       }
+    //     >
+    //       <LoginScreen />
+    //     </Suspense>
+    //   ),
+    // },
+    // {
+    //   path: "/loginPassword",
+    //   element: (
+    //     <Suspense
+    //       fallback={
+    //         <div className="loader-container" style={{ height: "100vh" }}>
+    //           <span className="loader"></span>
+    //         </div>
+    //       }
+    //     >
+    //       <LoginPassword />
+    //     </Suspense>
+    //   ),
+    // },
     {
       path: "/",
-      element: (
-        <Suspense
-          fallback={
-            <div className="loader-container" style={{ height: "100vh" }}>
-              <span className="loader"></span>
-            </div>
-          }
-        >
-          <LoginScreen />
-        </Suspense>
-      ),
-    },
-    {
-      path: "/loginPassword",
-      element: (
-        <Suspense
-          fallback={
-            <div className="loader-container" style={{ height: "100vh" }}>
-              <span className="loader"></span>
-            </div>
-          }
-        >
-          <LoginPassword />
-        </Suspense>
-      ),
-    },
-    {
-      path: "/:companyName/home",
       element: (
         <ProtectedRoute>
           <Suspense
